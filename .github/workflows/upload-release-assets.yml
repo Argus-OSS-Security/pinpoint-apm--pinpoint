@@ -1,18 +1,19 @@
 name: Upload Pinpoint binaries to GitHub Release
 
-on:
-  workflow_dispatch:
-    inputs:
-      git-ref:
-        description: 'The branch, tag or SHA to checkout'
-        required: true
-        default: 'v2.x.y or master'
-
-      release-version:
-        description: 'GitHub Release tag/version to attach assets to. ex: v3.0.3'
-        required: true
-        default: 'v2.x.y'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       git-ref:
+#         description: 'The branch, tag or SHA to checkout'
+#         required: true
+#         default: 'v2.x.y or master'
+# 
+#       release-version:
+#         description: 'GitHub Release tag/version to attach assets to. ex: v3.0.3'
+#         required: true
+#         default: 'v2.x.y'
+# 
 jobs:
   upload-binaries:
     runs-on: ubuntu-24.04

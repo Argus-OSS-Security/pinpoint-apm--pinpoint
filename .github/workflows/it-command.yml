@@ -1,8 +1,9 @@
 name: it-command
-on:
-  repository_dispatch:
-    types: [it-command]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   repository_dispatch:
+#     types: [it-command]
+# 
 jobs:
   pullrequest_IT:
     runs-on: ubuntu-24.04

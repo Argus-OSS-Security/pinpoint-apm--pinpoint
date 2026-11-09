@@ -1,9 +1,10 @@
 name: Homepage
 
-on: 
-  release:
-    types: [published]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on: 
+#   release:
+#     types: [published]
+# 
 jobs:
   repository-dispatch-event:
     runs-on: ubuntu-24.04
